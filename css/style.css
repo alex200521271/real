@@ -1,0 +1,363 @@
+@charset "utf-8";
+
+* {
+	margin: 0;
+	padding: 0;
+	outline: none;
+
+}
+
+html {
+	height: 100%;
+
+}
+body {
+	width: 100%;
+	height: 100%;
+	background-color: #ffa500;
+	color: #333;
+	font-family: "Segoi UI", Arial, sans-serif;
+	font-size: 1em;
+	line-height: 135%;
+	float: left;
+}
+img {
+	max-width: 100%;
+	height: auto;
+	width: auto\9;
+
+}
+
+a {
+	color: white;
+	text-decoration: none; 
+}
+
+a:hover {
+	color: yellow;
+}
+
+a, a:hover {
+	-webkit-transition: all.6s ease; 
+	-ms-transition: all.6s ease;
+	-moz-transition: all.6s ease; 
+	transition: all.6s ease;
+}
+
+.clear {
+	clear: both;
+}
+
+/* ШАПКА*/
+
+header {
+	width: 98%;
+	float: left;
+	padding: 1%;
+	background-color: black;
+	border-bottom: 2px solid silver;
+	margin-bottom: 20px;
+}
+
+header #logo {
+	width: 30%;
+	float: left;
+	margin-left: 10px;
+}
+
+header #logo a {
+	color: white;
+	font-size: 2em;
+	font-family: 'YS Text',Arial,Helvetica,sans-serif;
+}
+
+header #logo span {
+	color: #ffd700;
+	font-size: 1.5em;
+}
+
+header #menuHead {
+	width: 64%;
+	float: left;
+	color: white;
+}
+
+header #menuHead div {
+	float: left;
+	padding: 5px;
+	background-color: grey;
+	border-radius: 10px;
+}
+
+header #menuHead a {
+	color: white;
+}
+
+header #menuHead div:hover {
+	background-color:red ;
+
+	
+}
+
+header #regAuth {
+	width: 30%;
+	float: left;
+	color: white;
+	text-align: right;
+	font-size: 1.2em;
+}
+
+
+
+
+/* Стили для всего документа */
+
+#wrapper {
+	width: 80%;
+	float: left;
+	margin-left: 10%;
+	display: flex;
+}
+
+/*Стили для левой колонки*/
+
+
+#wrapper #leftCol {
+	width: 70%;
+	margin-right: 10%;
+	float: left;
+}
+
+#wrapper #leftCol .reg {
+	width: 70%;
+	margin-right: 10%;
+	float: left;
+	display: flex;
+	
+}
+
+#wrapper #leftCol #bigArticle {
+	width: 78%;
+	margin-left: 10%;
+	background-color: blue;
+	padding: 1%;
+	float: left;
+	border-radius: 10px;
+	color: white;
+	font-family: Comic Sans MS, sans-serif;
+}
+
+#wrapper #leftCol #bigArticle img, #wrapper #leftCol .article img {
+	width: 100%;
+	float: left;
+	margin-bottom: 10px;
+	border-radius: 10px;
+}
+
+#wrapper #leftCol #bigArticle h2, #wrapper #leftCol .article h2 {
+	font-weight: normal;
+	font-size: 1.4em;
+	color: yellow;
+	font-family: Comic Sans MS, sans-serif;
+	margin-bottom: 10px;
+}
+
+#wrapper #leftCol #bigArticle div.more, #wrapper #leftCol .article div.more {
+	padding: 5px;
+	border-radius: 5px;
+	background-color: red;
+	color: white;
+	width: 10%;
+	text-align: center;
+	margin-top: 10px;
+}
+
+#wrapper #leftCol #bigArticle div.more:hover, #wrapper #leftCol .article div.more:hover {
+	background-color: #9b2d30;
+
+}
+
+#wrapper #leftCol .article {
+	width: 40%;
+	margin-left: 5%;
+	background-color: blue;
+	padding: 1%;
+	float: left;
+	border-radius: 10px;
+	color: white;
+	font-family: Comic Sans MS, sans-serif;
+}
+
+#wrapper #leftCol .article div.more {
+	width: 20%
+}
+
+#wrapper #leftCol #Team {
+	width: 90%;
+	margin-left: 10%;
+	border: 1px solid silver;
+	background-color: blue;
+	border-radius: 5px;
+}
+
+
+#wrapper #leftCol input {
+	width: 40%;
+	margin-left: 30%;
+	float: left;
+	border-radius: 5px;
+	border: 2px solid silver;
+	padding: 5px;
+	margin-bottom: 10px;
+	font-size: 1.2em;
+}
+
+#wrapper #leftCol input:focus, #wrapper #leftCol textarea:focus {
+	border: 2px solid blue;
+}
+
+#wrapper #leftCol input#done {
+	background-color: blue;
+	color: orange;
+}
+
+#wrapper #leftCol input#done:hover {
+	border: 2px solid #995400;
+	cursor: pointer;
+}
+
+#wrapper #leftCol textarea {
+	width: 50%;
+	height: 150px;
+	margin-left: 25%;
+	float: left;
+	border-radius: 5px;
+	border: 2px solid silver;
+	padding: 5px;
+	margin-bottom: 10px;
+	font-size: 1.2em;
+	resize: none;
+}
+
+#wrapper #leftCol #messageShow {
+	font-size: 1.2em;
+	width: 100%;
+	text-align: center;
+	float: left;
+	color: red;
+}
+
+/*Стили для правой колонки*/
+
+#wrapper #rightCol {
+	width: 20%;
+	float: left;
+	color: red;
+	text-align: center;
+}
+
+#wrapper #rightCol .banner {
+	width: 100%;
+	float: left;
+	margin-bottom: 20px;
+	margin-left: 10%;
+}
+
+/* Стили для футера */
+
+footer {
+	width: 98%;
+	float: left;
+	padding: 1%;
+	background-color: black;
+	border-top: 2px solid silver;
+	margin-top: 20px;
+	color: white;
+}
+
+footer #social {
+	float: left;
+	width: 50%;
+	height: 80px;
+}
+
+footer #social img {
+	width: 30px;
+	height: 30px;
+	float: left;
+	margin-right: 5px;
+}
+
+footer #rights {
+	float: right;
+	width: 50%;
+	text-align: right;
+	font-size: 1.1em;
+	background-color: black;
+}
+
+td {
+	text-align: center;
+}
+
+table {
+	color: white;
+	width: 100%;
+}
+
+
+.reg {
+	display: flex;
+	flex-direction: column;
+	width: 200px;
+}
+
+.reg input {
+	margin: 10px 0;
+	padding: 10px;
+	border: unset;
+	border-bottom: 2px solid red;
+	outline: none;
+}
+
+.reg button {
+	padding: 10px;
+	background-color: blue;
+	border: unset;
+	cursor: pointer;
+	margin-bottom: 10px;
+	color: orange;
+	border-radius: 5px;
+	border: 2px solid silver;
+	width: 240px;
+	margin-left: 30%;
+}
+
+.reg button:hover {
+	border: 2px solid #995400;
+	cursor: pointer;
+}
+
+.msg {
+	
+	border: 2px solid orange;
+	border-radius: 3px;
+	padding: 10px;
+	text-align: center;
+}
+
+.logout {
+    color: #b7625c;
+}
+
+.autor {
+	margin-left: 30%;
+}
+
+label {
+	margin-left: 30%;
+}
+
+
+
+
